@@ -1,0 +1,17 @@
+{
+  "name": "PHP Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/php:8.2",
+  "features": {
+    "ghcr.io/devcontainers/features/apache:1": {}
+  },
+  "forwardPorts": [80],
+  "postCreateCommand": "composer install || true",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "felixfbecker.php-intellisense",
+        "xdebug.php-debug"
+      ]
+    }
+  }
+}
