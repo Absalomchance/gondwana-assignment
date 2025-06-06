@@ -1,25 +1,21 @@
 {
   "name": "gondwana-assignment",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "image": "mcr.microsoft.com/devcontainers/php:8.1-node",
   "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
     "ghcr.io/devcontainers/features/node:1": {
       "version": "20"
     }
   },
-  "postCreateCommand": "npm install --prefix rates-api || true",
+  "postCreateCommand": "npm install || true",
   "forwardPorts": [3000],
-  "portsAttributes": {
-    "3000": {
-      "label": "Frontend App",
-      "onAutoForward": "openBrowser",
-      "visibility": "public"
-    }
-  },
   "customizations": {
     "vscode": {
+      "settings": {},
       "extensions": [
         "esbenp.prettier-vscode",
-        "dbaeumer.vscode-eslint"
+        "dbaeumer.vscode-eslint",
+        "bmewburn.vscode-intelephense-client"
       ]
     }
   }

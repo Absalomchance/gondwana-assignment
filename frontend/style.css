@@ -160,7 +160,7 @@ button[type="submit"]:hover {
   color: #2c3e50;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.8rem;
   position: relative;
   transition: color 0.3s ease;
   padding: 8px 12px;
@@ -198,8 +198,8 @@ button[type="submit"]:hover {
 
 .bookings-btn-wrapper {
   text-align: left;
-  margin-top: 0.5rem;
-  padding-right: 7em;
+  margin-top: 0.0rem;
+  padding-right: 4em;
 }
 
 .bookings-btn {
@@ -238,6 +238,7 @@ button[type="submit"]:hover {
       font-family: Arial, sans-serif;
       border-top: 3px solid #7c5a02;
       margin-top: 3rem;
+      width: 100%;
     }
     .footer-container {
 
@@ -262,6 +263,7 @@ button[type="submit"]:hover {
       display: flex;
       flex-direction: column;
       gap: 0.8rem;
+      width: 100%;
     }
     .footer-column h4 {
       margin-bottom: 1rem;
