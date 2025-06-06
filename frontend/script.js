@@ -28,7 +28,8 @@ document.getElementById('rateForm').addEventListener('submit', async function (e
   try {
     resultDiv.innerHTML = `<div class="rate-card"><p>Loading rates...</p></div>`;
 
-    const response = await fetch('/api/rates', {
+    const response = await fetch('http://localhost:3000/api/rates', {
+
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload)
@@ -50,7 +51,7 @@ document.getElementById('rateForm').addEventListener('submit', async function (e
     <p><strong>Daily Rate:</strong> ${rateInfo ? 'N$ ' + rateInfo['Effective Average Daily Rate'] : 'N/A'}</p>
     <p><strong>Total Charge:</strong> ${result['Total Charge'] ? 'N$ ' + result['Total Charge'] : 'N/A'}</p>
     <p><strong>Date Range:</strong> ${arrival} to ${departure}</p>
-    <p><strong>Available:</strong> ${rateInfo ? 'Yes ✅' : 'No ❌'}</p>
+    <p><strong>Available:</strong> ${rateInfo ? 'Yes' : 'No'}</p>
   </div>
 
     `;

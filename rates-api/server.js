@@ -26,7 +26,6 @@ app.post('/api/rates', async (req, res) => {
     const unitTypeMap = {
       'Standard Room': -2147483637,
       'Deluxe Room': -2147483456,
-      // Add other mappings as needed
     };
 
     const unitTypeId = unitTypeMap[unit];

@@ -309,7 +309,7 @@ button[type="submit"]:hover {
 
 .rate-card {
   background-color: #f1f5f9;
-  border-left: 6px solid #8d7302;
+  border-left: 6px solid #2fc30b;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -331,7 +331,7 @@ button[type="submit"]:hover {
 
 .rate-card.unavailable {
   background-color: #fff5f5;
-  border-left-color: #3ee546;
+  border-left-color: #ba0000;
 }
 
 @keyframes fadeIn {
