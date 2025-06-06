@@ -1,13 +1,20 @@
 {
   "name": "gondwana-assignment",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:20", 
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
       "version": "20"
     }
   },
   "postCreateCommand": "npm install --prefix rates-api || true",
-  "forwardPorts": [3000, 8000],
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Frontend App",
+      "onAutoForward": "openBrowser",
+      "visibility": "public"
+    }
+  },
   "customizations": {
     "vscode": {
       "extensions": [
