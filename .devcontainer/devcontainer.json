@@ -1,16 +1,18 @@
 {
-  "name": "PHP Dev Container",
-  "image": "mcr.microsoft.com/devcontainers/php:8.2",
+  "name": "gondwana-assignment",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20", 
   "features": {
-    "ghcr.io/devcontainers/features/apache:1": {}
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    }
   },
-  "forwardPorts": [80],
-  "postCreateCommand": "composer install || true",
+  "postCreateCommand": "npm install --prefix rates-api || true",
+  "forwardPorts": [3000, 8000],
   "customizations": {
     "vscode": {
       "extensions": [
-        "felixfbecker.php-intellisense",
-        "xdebug.php-debug"
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
       ]
     }
   }

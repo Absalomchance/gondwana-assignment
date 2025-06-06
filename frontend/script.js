@@ -49,7 +49,7 @@ document.getElementById('rateForm').addEventListener('submit', async function (e
     <h2>Rate Details</h2>
     <p><strong>Unit:</strong> ${rateInfo ? rateInfo.Category : 'N/A'}</p>
     <p><strong>Daily Rate:</strong> ${rateInfo ? 'N$ ' + rateInfo['Effective Average Daily Rate'] : 'N/A'}</p>
-    <p><strong>Total Charge:</strong> ${result['Total Charge'] ? 'N$ ' + result['Total Charge'] : 'N/A'}</p>
+    <p><strong>Total Rate:</strong> ${result['Total Charge'] ? 'N$ ' + result['Total Charge'] : 'N/A'}</p>
     <p><strong>Date Range:</strong> ${arrival} to ${departure}</p>
     <p><strong>Available:</strong> ${rateInfo ? 'Yes' : 'No'}</p>
   </div>
